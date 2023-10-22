@@ -4,7 +4,18 @@ body {
     margin: 0;
     padding: 56px;
     font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    text-underline-offset: 12%;
     background: #efefef;
+}
+
+a {
+    text-decoration: none;
+    color: #1a66a9;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #wrapper {
@@ -50,8 +61,31 @@ main {
 }
 
 main h2 {
+    margin: 56px 0 32px 0;
     font-family: 'Rubik Mono One', monospace;
     font-size: 24px;
+}
+
+main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main ul li {
+    margin: 32px 0;
+}
+
+main ul li h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main ul li p {
+    margin: 12px 0;
+    max-width: 65%;
+    line-height: 1.6;
 }
 
 footer {
@@ -69,9 +103,4 @@ footer nav {
     display: flex;
     flex-flow: row nowrap;
     gap: 24px;
-}
-
-footer nav a {
-    text-decoration: underline;
-    color: #1a66a9;
 }
