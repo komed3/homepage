@@ -22,9 +22,9 @@ a:hover {
     display: grid;
     grid-template-columns: 160px 1fr 160px;
     grid-template-areas:
-        'logo header  aside'
-        '.    main    aside'
-        '.    footer  aside';
+        'logo header  .'
+        '.    main    .'
+        '.    footer  .';
     align-items: center;
     gap: 64px 48px;
     padding: 48px;
@@ -35,8 +35,9 @@ a:hover {
 
 #logo {
     grid-area: logo;
-    width: 160px;
-    height: 160px;
+    aspect-ratio: 1/1;
+    width: 100%;
+    height: auto;
     border-radius: 12px;
 }
 
@@ -84,7 +85,7 @@ main ul li h3 {
 
 main ul li p {
     margin: 12px 0;
-    max-width: 65%;
+    max-width: 720px;
     line-height: 1.6;
 }
 
@@ -103,4 +104,78 @@ footer nav {
     display: flex;
     flex-flow: row nowrap;
     gap: 24px;
+}
+
+@media all and ( max-width: 1480px ) {
+
+    #wrapper {
+        grid-template-columns: 140px 1fr;
+        grid-template-areas:
+            'logo   header'
+            'main   main'
+            'footer footer';
+    }
+
+}
+
+@media all and ( max-width: 960px ) {
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    footer {
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 12px;
+    }
+
+}
+
+@media all and ( max-width: 680px ) {
+
+    body {
+        padding: 24px;
+    }
+
+    #wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header'
+            'main'
+            'footer';
+        gap: 24px;
+        padding: 24px;
+        border-radius: 18px;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    main h2 {
+        margin: 48px 0 24px 0;
+        font-size: 20px;
+    }
+
+    main ul li h3 {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
 }
