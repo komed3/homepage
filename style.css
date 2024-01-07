@@ -83,6 +83,13 @@ main ul li h3 {
     font-weight: bold;
 }
 
+main ul li h3 .flag {
+    padding: 4px 8px;
+    font-size: 14px;
+    background: #f5c27a;
+    border-radius: 4px;
+}
+
 main ul li p {
     margin: 12px 0;
     max-width: 720px;
