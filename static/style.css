@@ -40,23 +40,24 @@ header, footer {
     gap: 48px;
 }
 
-header .teaser {
+header .name {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     gap: 12px;
+    margin: 0;
     line-height: 26px;
     text-transform: uppercase;
     font-size: 24px;
     font-weight: 900;
 }
 
-header .teaser .dev {
-    padding: 2px 12px;
+header .name .dev {
+    padding: 3px 16px;
     font-size: 20px;
     color: #fff;
     background: var( --accent );
-    border-radius: 14px;
+    border-radius: 16px;
 }
 
 footer .credits {
@@ -74,4 +75,12 @@ footer .contact {
 
 main {
     margin: 48px 0;
+}
+
+.intro {
+    max-width: 640px;
+}
+
+.intro .teaser {
+    font-size: 20px;
 }
