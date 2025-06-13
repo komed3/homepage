@@ -11,6 +11,8 @@
 ._js_ts { --c: #3178c6; }
 ._html  { --c: #e34c26; }
 ._css   { --c: #663399; }
+._node  { --c: #6da65f; }
+._java  { --c: #b07219; }
 
 body {
     margin: 0;
