@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url( './SpaceGrotesk.woff2' ) format( 'woff2' );
+}
+
+body {
+    margin: 0;
+    padding: 56px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    text-underline-offset: 12%;
+    background: #efefef;
+}
+
+a {
+    text-decoration: none;
+    color: #1a66a9;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#wrapper {
+    padding: 48px;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 0 6px #e4e4e4;
+}
