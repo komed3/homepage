@@ -7,13 +7,13 @@
     --accent: #1a66a9;
 }
 
-._php   { --c: #4f5d95; }
-._js_ts { --c: #3178c6; }
-._html  { --c: #e34c26; }
-._css   { --c: #663399; }
-._node  { --c: #6da65f; }
-._java  { --c: #b07219; }
-._c     { --c: #f34b7d; }
+._php  { --c: #4f5d95; }
+._js   { --c: #3178c6; }
+._html { --c: #e34c26; }
+._css  { --c: #663399; }
+._node { --c: #6da65f; }
+._java { --c: #b07219; }
+._c    { --c: #f34b7d; }
 
 body {
     margin: 0;
