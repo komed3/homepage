@@ -45,24 +45,20 @@ header, footer {
     gap: 48px;
 }
 
-header .name {
+header .logo {
+    height: 32px;
+}
+
+header .socials {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    gap: 12px;
-    margin: 0;
-    line-height: 26px;
-    text-transform: uppercase;
-    font-size: 32px;
-    font-weight: 900;
+    gap: 32px;
 }
 
-header .name .dev {
-    padding: 5px 18px;
-    font-size: 24px;
-    color: #fff;
-    background: var( --accent );
-    border-radius: 18px;
+header .socials img {
+    width: 32px;
+    height: 32px;
 }
 
 footer .credits {
