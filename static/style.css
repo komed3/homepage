@@ -7,6 +7,11 @@
     --accent: #1a66a9;
 }
 
+._php   { --c: #4f5d95; }
+._js_ts { --c: #3178c6; }
+._html  { --c: #e34c26; }
+._css   { --c: #663399; }
+
 body {
     margin: 0;
     padding: 56px;
@@ -18,11 +23,7 @@ body {
 
 a {
     text-decoration: none;
-    color: var( --accent );
-}
-
-a:hover {
-    text-decoration: underline;
+    color: inherit;
 }
 
 #wrapper {
@@ -73,14 +74,43 @@ footer .contact {
     font-size: 14px;
 }
 
+footer .contact a {
+    color: var( --accent );
+}
+
+footer .contact a:hover {
+    text-decoration: underline;
+}
+
 main {
     margin: 48px 0;
 }
 
 .intro {
-    max-width: 640px;
+    max-width: 680px;
 }
 
 .intro .teaser {
-    font-size: 20px;
+    font-size: 24px;
+}
+
+.intro .skills {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.intro .skills .label {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.intro .skills .lang {
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #fff;
+    background: var( --c );
+    border-radius: 14px;
 }
