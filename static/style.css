@@ -57,7 +57,7 @@ a {
 }
 
 #wrapper {
-    padding: 32px 48px;
+    padding: 42px;
     background: #fff;
     border-radius: 24px;
     box-shadow: 0 0 6px #e4e4e4;
@@ -68,7 +68,8 @@ header, footer {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: 48px;
+    gap: 0 48px;
+    white-space: nowrap;
     font-size: 16px;
 }
 
@@ -99,15 +100,15 @@ header .socials img {
     height: 26px;
 }
 
+footer .credits {
+    margin: 0;
+}
+
 footer .contact {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     gap: 16px;
-}
-
-footer .credits {
-    margin: 0;
 }
 
 footer .contact a {
@@ -186,4 +187,61 @@ main .intro {
     color: #000;
     background: #fff;
     border-radius: 16px;
+}
+
+@media all and ( max-width: 1600px ) {
+
+    .projects {
+        column-count: 3;
+    }
+
+}
+
+@media all and ( max-width: 1200px ) {
+
+    body, #wrapper {
+        padding: 32px;
+    }
+
+    .projects {
+        column-count: 2;
+    }
+
+}
+
+@media all and ( max-width: 800px ) {
+
+    body, #wrapper {
+        padding: 24px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .projects {
+        column-count: 1;
+    }
+
+}
+
+@media all and ( max-width: 500px ) {
+
+    body, #wrapper {
+        padding: 16px;
+    }
+
+    header .logo span {
+        display: none;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    main .intro {
+        line-height: 28px;
+        font-size: 20px;
+    }
+
 }
