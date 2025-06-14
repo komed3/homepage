@@ -23,8 +23,11 @@
 
 ._node  { --c: var( --accent ); }
 ._web   { --c: #e34c26; }
-._other { --c: #6da65f; }
 ._java  { --c: #b07219; }
+._c     { --c: #f34b7d; }
+._php   { --c: #4f5d95; }
+._other { --c: #6da65f; }
+._tool  { --c: #663399; }
 
 body {
     margin: 0;
