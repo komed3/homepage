@@ -14,11 +14,17 @@
     font-feature-settings: 'kern';
     font-variant-ligatures: common-ligatures;
     font-kerning: normal;
+    -ms-overflow-style: none;
+    scrollbar-width: none
 }
 
 *, *:before, *:after {
     box-sizing: border-box !important;
     outline: 0 none;
+}
+
+::-webkit-scrollbar, *::-webkit-scrollbar {
+    display: none
 }
 
 ._node  { --c: var( --accent ); }
@@ -38,6 +44,11 @@ body {
     text-underline-offset: 12%;
     color: #000;
     background: #efefef;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
 }
 
 a {
