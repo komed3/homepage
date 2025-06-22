@@ -11,6 +11,7 @@
         <link rel="preload" as="font" href="./static/SpaceGrotesk.woff2" type="font/woff2" crossorigin="anonymous">
         <link rel="icon" sizes="16x16 32x32 48x48" href="./favicon.ico" />
         <link rel="stylesheet" href="./static/style.min.css" />
+        <script src="./static/tabs.min.js"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -34,10 +35,20 @@
             <main role="main">
                 <p class="intro">
                     Hi, I’m komed3, a web designer, free software developer, committed to open source projects
-                    and overall enthusiast of electronics since 2010. I’m specialized in PHP, JavaScript, TypeScript,
+                    and overall enthusiast of electronics since 2010. I’m specialized in PHP, JavaScript, Node.js,
                     HTML and CSS.
                 </p>
-                <h2 class="heading">Projects</h2>
+                <h2 class="heading">
+                    <span>Projects</span>
+                    <div class="tabs">
+                        <button key="_all">All</button>
+                        <button key="_web">Web</button>
+                        <button key="_node">Node.js</button>
+                        <button key="_tool">Tools</button>
+                        <button key="_php">PHP</button>
+                        <button key="_other">Other</button>
+                    </div>
+                </h2>
                 <div class="projects">
                     <a href="https://npmjs.com/package/cmpstr" class="item _node">
                         <h3>CmpStr</h3>
