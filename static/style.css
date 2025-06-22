@@ -148,7 +148,8 @@ main .intro {
 
 .tabs {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
     gap: 6px;
     white-space: nowrap;
@@ -243,7 +244,7 @@ main .intro {
         padding: 24px;
     }
 
-    footer {
+    footer, .heading {
         flex-direction: column;
     }
 
