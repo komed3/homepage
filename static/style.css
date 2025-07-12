@@ -184,10 +184,20 @@ main .intro {
     break-inside: avoid;
     display: block;
     margin-bottom: 24px;
-    padding: 22px 24px;
     color: #fff;
     background: var( --c );
     border-radius: 14px;
+    overflow: hidden;
+}
+
+.projects .item-preview {
+    width: 100%;
+    height: auto;
+    filter: grayscale( 1 );
+}
+
+.projects .item-content {
+    padding: 22px 24px;
 }
 
 .projects .item h3 {
