@@ -32,6 +32,7 @@
 ._linux { --c: #f34b7d; }
 ._node  { --c: var( --accent ); }
 ._other { --c: #6da65f; }
+._py    { --c: #5f9baa; }
 ._php   { --c: #4f5d95; }
 ._web   { --c: #e34c26; }
 
@@ -96,7 +97,9 @@ header .socials {
     gap: 24px;
 }
 
+header .socials a,
 header .socials img {
+    display: inline-block;
     width: 26px;
     height: 26px;
 }
