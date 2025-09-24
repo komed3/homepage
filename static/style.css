@@ -110,9 +110,10 @@ footer .credits {
 
 footer .contact {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 0 16px;
 }
 
 footer .contact a {
@@ -252,14 +253,18 @@ main .intro {
 
 }
 
+@media all and ( max-width: 1000px ) {
+
+    footer, .heading {
+        flex-direction: column;
+    }
+
+}
+
 @media all and ( max-width: 800px ) {
 
     body, #wrapper {
         padding: 24px;
-    }
-
-    footer, .heading {
-        flex-direction: column;
     }
 
     .projects {
@@ -274,12 +279,23 @@ main .intro {
         padding: 16px;
     }
 
+    header {
+        gap: 0;
+    }
+
     header .logo span {
         display: none;
     }
 
     footer {
+        text-align: center;
+        white-space: wrap;
         font-size: 14px;
+    }
+
+    footer .credits {
+        margin-bottom: 12px;
+        line-height: 1.2;
     }
 
     main .intro {
